@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Attendance Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./pic/tata.png" alt="TATA Steel Logo" id="logo">
+        <h1 class="heading">TATA STEEL</h1>
+    </header>
+    <div id="login-container">
+        <h2>Admin Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="attendance-container" style="display: none;">
+        <h2>Vendor Attendance</h2>
+        <select id="department-select">
+            <option value="">Select Department</option>
+            <option value="FNB">Food and Beverage</option>
+            <option value="HK">Housekeeping</option>
+            <option value="MT">Maintenance</option>
+            <option value="SEC">Security</option>
+            <option value="ADM">Administration</option>
+        </select>
+        <input type="date" id="date-picker">
+        <table id="vendor-table">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Vendor ID</th>
+                    <th>Vendor Name</th>
+                    <th>Department ID</th>
+                    <th>Present</th>
+                </tr>
+            </thead>
+            <tbody id="vendor-list"></tbody>
+        </table>
+        <button onclick="submitAttendance()">Submit Attendance</button>
+        <button id="download-btn" onclick="downloadAttendance()">Download Attendance</button>
+        <button id="logout-btn" onclick="logout()">Logout</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, white, rgb(34, 129, 207));
+    min-height: 100vh;
+}
+
+.heading {
+    text-align: center;
+}
+
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 50px;
+}
+
+#attendance-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+#date-picker
+{
+    max-width: 778px;
+}
+
+#password,
+#username {
+    width: 94%;
+}
+
+#login-container {
+    max-width: 400px;
+    margin: 150px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#login-container:hover {
+    box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
+}
+
+#attendance-container:hover {
+    box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
+}
+
+input,
+select,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #124c8f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7994e4;
+}
+
+
+#logout-btn {
+    background-color: #f44336;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#logout-btn:hover {
+    background-color: #c56868;
+}
+
+#login-container p,
+#attendance-container p {
+    text-align: center;
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #3c73e1;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
